@@ -6,10 +6,10 @@ export function Footer() {
   return (
     <footer className="bg-black text-white py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="text-2xl mb-4">ML Builder</div>
+            <div className="text-2xl mb-4">Void AI</div>
             <p className="text-neutral-400 text-sm">
               Build, train, and deploy machine learning models without code.
             </p>
@@ -68,39 +68,12 @@ export function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Legal */}
-          <div>
-            <h3 className="mb-4">Legal</h3>
-            <ul className="space-y-3 text-neutral-400 text-sm">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Cookie Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Security
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-neutral-400 text-sm">
-            © {currentYear} ML Builder. All rights reserved.
+            © {currentYear} Void AI. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a

@@ -7,7 +7,7 @@ export function Hero() {
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
       {/* Animated background pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]" />
-      
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="flex justify-center items-center"
         >
           <Button
             size="lg"
@@ -60,34 +60,6 @@ export function Hero() {
             Get Started
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg"
-          >
-            Watch Demo
-          </Button>
-        </motion.div>
-
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
-          className="mt-20 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
-        >
-          <div className="border-t border-black pt-4">
-            <div className="text-4xl mb-2">10k+</div>
-            <div className="text-sm text-neutral-600">Models Deployed</div>
-          </div>
-          <div className="border-t border-black pt-4">
-            <div className="text-4xl mb-2">99.9%</div>
-            <div className="text-sm text-neutral-600">Accuracy</div>
-          </div>
-          <div className="border-t border-black pt-4">
-            <div className="text-4xl mb-2">5min</div>
-            <div className="text-sm text-neutral-600">Avg. Setup</div>
-          </div>
         </motion.div>
       </motion.div>
     </section>
